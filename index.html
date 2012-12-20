@@ -1,0 +1,550 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/bootstrap/js/bootstrap.js"> </script>
+    <style type="text/css" media="screen">    
+       
+    <style type="text/css" media="screen">    
+    
+		.carousel { line-height:  20px}
+		
+      
+       
+    </style>
+  </head>
+ 	   
+  <body>
+      <center>
+			<div class="page-header">
+  <h1>Peoples Democracy <br> <small>UI Layout Proposal 1</small></h1>
+</div>
+      </center>
+   <div class="row-fluid">
+		<div class="span7" style="margin-left:2%">
+	  		<div id="myCarousel" class="carousel slide" style="border: 1px solid #AEADAD;padding-left:3%;padding-right:1%;padding-top:1%">		
+	    		<div class="carousel-inner">
+	      		<div class="active item">
+	      			<table cellpadding="10" class="">
+	      				<th style="text-align:left;" >CURRENT ISSUES</th> 
+								<tr style="border-top:2px solid #AEADAD;">
+									<td style="border-right: 1px solid #AEADAD;padding-right:1%" >
+												<div class="title">
+							<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+							<div class="subtitle">  
+			  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+							</div>
+							The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012			
+									</td>								
+								<td>
+												<div class="title">
+							<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+							<div class="subtitle">  
+			  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+							</div>
+							The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012			
+									</td>								
+		
+								</tr>
+						</table>
+	      		</div>
+	      		<div class="item">
+	      			<table cellpadding="10" class=".crtable hover">
+	      			<th style="text-align:left;" >CURRENT ISSUES</th> 
+								<tr style="border-top:2px solid #AEADAD;">
+							
+									<td style="border-right: 1px solid #AEADAD;padding-right:1%" >
+												<div class="title">
+							<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+							<div class="subtitle">  
+			  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+							</div>
+							The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012			
+									</td>								
+															<td>
+												<div class="title">
+							<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+							<div class="subtitle">  
+			  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+							</div>
+							The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012			
+									</td>							
+								</tr>
+						</table>
+					 </div>
+					<div class="item">
+					<table cellpadding="10" class=".crtable hover">
+							<th style="text-align:left;" >CURRENT ISSUES</th> 
+								<tr style="border-top:2px solid #AEADAD;">
+									<td style="border-right: 1px solid #AEADAD;padding-right:1%" >
+												<div class="title">
+							<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+							<div class="subtitle">  
+			  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+							</div>
+							The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012			
+									</td>								
+															<td>
+												<div class="title">
+							<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+							<div class="subtitle">  
+			  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+							</div>
+							The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012			
+									</td>								
+		
+								</tr>
+						</table>
+					 </div>
+				 </div>
+				 <div style="text-align:right;padding-top:1%;padding-right:2%;padding-bottom:2%">
+	     			<div class="cnav">
+		 				<a href="#" data-to="0" class="badge active">1</a>
+		 				<a href="#" data-to="1" class="badge">2</a>
+		 				<a href="#" data-to="2" class="badge">3</a>
+	       		</div>
+					 <script type="text/javascript">
+	       $(window).load(function() {
+               $('#myCarousel').carousel();
+               $(".cnav a").click(function(e){
+               e.preventDefault();
+               var index = parseInt($(this).attr('data-to'));
+	       //alert(index);
+               $('#myCarousel').carousel(index);
+               var nav = $('.cnav');
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+
+               $("#myCarousel").bind('slide', function(e) {
+               var elements = 4; // change to the number of elements in your nav
+               var nav = $('.cnav');
+               var index = $('#myCarousel').find('.item.active').index();
+               index = (index == elements - 1) ? 0 : index + 1;
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+	       });
+	     </script>	       		
+	     		</div>
+	     		
+	     	</div>
+	     	<div class="row-fluid">
+	     		<div class="span6" style="padding-left:0,margin-left:0">
+	     	  		<div id="myCarousel2" class="carousel slide" style="border: 1px solid #AEADAD;padding-left:3%;padding-right:1%;">
+	    			<div class="carousel-inner">
+	      			<div class="active item">
+							<div class="title"><h4  style="border-bottom:2px solid #AEADAD;">INTERNATIONAL</h4>
+							<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+							<div class="subtitle">  
+		  						<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+							</div>
+							The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+	      			</div>
+	      		<div class="item">
+	      			<h4 style="border-bottom:2px solid #AEADAD;">INTERNATIONAL</h4>
+	      			<strong>2-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+					<div class="item">
+					<h4 style="border-bottom:2px solid #AEADAD;">INTERNATIONAL</h4>
+	      			<strong>3-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+				 </div>
+				 <div style="text-align:right;padding-top:2%;padding-right:2%;padding-bottom:2%">
+	     			<div class="cnav2">
+		 				<a href="#" data-to="0" class="badge active">1</a>
+		 				<a href="#" data-to="1" class="badge">2</a>
+		 				<a href="#" data-to="2" class="badge">3</a>
+	       		</div>
+					 <script type="text/javascript">
+					 
+	       $(window).load(function() {
+               $('#myCarousel2').carousel();
+               $(".cnav2 a").click(function(e){
+               e.preventDefault();
+               var index = parseInt($(this).attr('data-to'));
+		       //alert(index);
+               $('#myCarousel2').carousel(index);
+               var nav = $('.cnav2');
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+
+               $("#myCarousel2").bind('slide', function(e) {
+               var elements = 4; // change to the number of elements in your nav
+               var nav = $('.cnav2');
+               var index = $('#myCarousel2').find('.item.active').index();
+               index = (index == elements - 1) ? 0 : index + 1;
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+	       });
+	     </script>	       		
+	     		</div>
+	     		</div>
+	   		</div>
+	   		<div class="span6" style="padding-left:0,margin-left:0;">
+	     	  		<div id="myCarousel3" class="carousel slide" style="border: 1px solid #AEADAD;padding-left:3%;padding-right:1%;">
+	    			<div class="carousel-inner">
+	      			<div class="active item">
+							<div class="title"><h4 style="border-bottom:2px solid #AEADAD;">SOCIAL ISSUES</h4>
+							<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+							<div class="subtitle">  
+		  						<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+							</div>
+							The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+	      			</div>
+	      		<div class="item">
+	      			<h4 style="border-bottom:2px solid #AEADAD;">SOCIAL ISSUES</h4>
+	      			<strong>2-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+					<div class="item">
+					<h4 style="border-bottom:2px solid #AEADAD;">SOCIAL ISSUES</h4>
+	      			<strong>3-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+				 </div>
+				 <div style="text-align:right;padding-top:2%;padding-right:2%;padding-bottom:2%">
+	     			<div class="cnav3">
+		 				<a href="#" data-to="0" class="badge active">1</a>
+		 				<a href="#" data-to="1" class="badge">2</a>
+		 				<a href="#" data-to="2" class="badge">3</a>
+	       		</div>
+					 <script type="text/javascript">
+					 
+	       $(window).load(function() {
+               $('#myCarousel3').carousel();
+               $(".cnav3 a").click(function(e){
+               e.preventDefault();
+               var index = parseInt($(this).attr('data-to'));
+		       //alert(index);
+               $('#myCarousel3').carousel(index);
+               var nav = $('.cnav3');
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+
+               $("#myCarousel3").bind('slide', function(e) {
+               var elements = 4; // change to the number of elements in your nav
+               var nav = $('.cnav3');
+               var index = $('#myCarousel3').find('.item.active').index();
+               index = (index == elements - 1) ? 0 : index + 1;
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+	       });
+	     </script>	       		
+	     		</div>
+	     		</div>
+	   		</div>
+	   	</div>
+	   	<div class="row-fluid">
+					   	<div id="myCarousel7" class="carousel slide" style="border: 1px solid #AEADAD;padding-left:3%;padding-right:1%;">
+					   					 <h4 style="border-bottom: 2px solid #AEADAD;">STATES</h4>
+	       		<ul class="nav nav-pills cnav2" style="border: 2px solid #AEADAD;padding-bottom:1%;padding-top:1%;padding-left:1%" >
+	       		   <li class="active"><a href="#" data-to="0" class="">Andhra Pradesh</a> </li>	
+		 				<li><a href="#" data-to="1" class="">Kerala</a></li>
+		 				<li><a href="#" data-to="2" class="">Tamil Nadu</a></li>
+		 				<li><a href="#" data-to="3" class="">West Bengal</a></li>
+		 				<li><a href="#" data-to="8" class="">Gujarat</a></li>
+		 				<li><a href="#" data-to="4" class="">Jammu & Kashmir</a></li>
+  						<li class="dropdown">
+    						<a class="dropdown-toggle" 	data-toggle="dropdown"   href="#"> Others <b class="caret"></b> </a>
+    						<ul class="dropdown-menu">
+      						<li><a href="#" data-to="0" class="">Andhra Pradesh</a> </li>	
+		 				<li><a href="#" data-to="1" class="">Kerala</a></li>
+		 				<li><a href="#" data-to="2" class="">Tamil Nadu</a></li>
+		 				<li><a href="#" data-to="3" class="">West Bengal</a></li>
+		 				<li><a href="#" data-to="4" class="">Jammu & Kashmir</a></li>
+						<li><a href="#" data-to="5" class="">Punjab</a></li>
+						<li><a href="#" data-to="6" class="">Bihar</a></li>
+						<li><a href="#" data-to="7" class="">Tripura</a></li>
+						<li><a href="#" data-to="8" class="">Gujarat</a></li>
+						<li><a href="#" data-to="9" class="">Maharashtra</a></li>
+    						</ul>
+  					</li>
+					</ul>
+					
+	    			<div class="carousel-inner">
+	      			<div class="active item">
+							<div class="title">
+							<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+							<div class="subtitle">  
+		  						<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+							</div>
+							The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+	      			</div>
+	      		<div class="item">
+	      			<h4>SOCIAL ISSUES</h4>
+	      			<strong>2-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+					<div class="item">
+					<h4>SOCIAL ISSUES</h4>
+	      			<strong>3-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+				 </div>
+
+				 <div style="padding-top:2%;padding-right:2%;padding-bottom:2%">
+	     		
+				<script type="text/javascript">
+					 
+	       $(window).load(function() {
+               $('#myCarousel2').carousel();
+               $(".cnav2 a").click(function(e){
+               e.preventDefault();
+               var index = parseInt($(this).attr('data-to'));
+		       //alert(index);
+               $('#myCarousel2').carousel(index);
+               var nav = $('.cnav2');
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+
+               $("#myCarousel2").bind('slide', function(e) {
+               var elements = 4; // change to the number of elements in your nav
+               var nav = $('.cnav2');
+               var index = $('#myCarousel2').find('.item.active').index();
+               index = (index == elements - 1) ? 0 : index + 1;
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+	       });
+	     </script>	       		
+	     		</div>
+	     		</div>
+	   	</div>
+	   </div>
+	   <div class="span4" style="margin-left:2%;">
+	   
+	   	<div class="carousel slide " style="border: 1px solid #AEADAD;padding-left:3%;padding-right:1%">
+	    		
+	      		<div class="active item">
+						<h4>Something</h4>												
+	      		</div>
+	     	
+	     	</div>
+
+	  		<div id="myCarousel4" class="carousel slide" style="border: 1px solid #AEADAD;padding-left:3%;padding-right:1%;height:%">
+	    		<div class="carousel-inner">
+	      		<div class="active item">
+						<div class="title"><h4 style="border-bottom:2px solid #AEADAD;">EDITORIAL</h4>
+						<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+	      		</div>
+	      		<div class="item">
+	      			<h4 style="border-bottom:2px solid #AEADAD;">EDITORIAL</h4>
+	      			<strong>2-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+					<div class="item">
+					<h4 style="border-bottom:2px solid #AEADAD;">EDITORIAL</h4>
+	      			<strong>3-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+				 </div>
+				 <div style="text-align:right;padding-top:2%;padding-right:2%;padding-bottom:2%">
+	     			<div class="cnav4">
+		 				<a href="#" data-to="0" class="badge active">1</a>
+		 				<a href="#" data-to="1" class="badge">2</a>
+		 				<a href="#" data-to="2" class="badge">3</a>
+	       		</div>
+					 <script type="text/javascript">
+					 
+	       $(window).load(function() {
+               $('#myCarousel4').carousel();
+               $(".cnav4 a").click(function(e){
+               e.preventDefault();
+               var index = parseInt($(this).attr('data-to'));
+		       //alert(index);
+               $('#myCarousel4').carousel(index);
+               var nav = $('.cnav4');
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+
+               $("#myCarousel4").bind('slide', function(e) {
+               var elements = 4; // change to the number of elements in your nav
+               var nav = $('.cnav4');
+               var index = $('#myCarousel4').find('.item.active').index();
+               index = (index == elements - 1) ? 0 : index + 1;
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+	       });
+	     </script>	       		
+	     		</div>
+	     		
+	     	</div>
+	     	
+	     	<div id="myCarousel5" class="carousel slide" style="border: 1px solid #AEADAD;padding-left:3%;padding-right:1%;">
+	    		<div class="carousel-inner">
+	      		<div class="active item">
+						<div class="title"><h4 style="border-bottom:2px solid #AEADAD;">ECONOMIC NOTES</h4>
+						<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+	      		</div>
+	      		<div class="item">
+	      			<h4 style="border-bottom:2px solid #AEADAD;">ECONOMIC NOTES</h4>
+	      			<strong>2-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+					<div class="item">
+					<h4 style="border-bottom:2px solid #AEADAD;">ECONOMIC NOTES</h4>
+	      			<strong>3-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+				 </div>
+				 <div style="text-align:right;padding-top:2%;padding-right:2%;padding-bottom:2%">
+	     			<div class="cnav5">
+		 				<a href="#" data-to="0" class="badge active">1</a>
+		 				<a href="#" data-to="1" class="badge">2</a>
+		 				<a href="#" data-to="2" class="badge">3</a>
+	       		</div>
+					 <script type="text/javascript">
+					 
+	       $(window).load(function() {
+               $('#myCarousel5').carousel();
+               $(".cnav5 a").click(function(e){
+               e.preventDefault();
+               var index = parseInt($(this).attr('data-to'));
+		       //alert(index);
+               $('#myCarousel5').carousel(index);
+               var nav = $('.cnav5');
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+
+               $("#myCarousel5").bind('slide', function(e) {
+               var elements = 4; // change to the number of elements in your nav
+               var nav = $('.cnav5');
+               var index = $('#myCarousel5').find('.item.active').index();
+               index = (index == elements - 1) ? 0 : index + 1;
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+	       });
+	     </script>	       		
+	     		</div>
+	   </div>
+	     
+	   	<div id="myCarousel6" class="carousel slide" style="border: 1px solid #AEADAD;padding-left:3%;padding-right:1%;">	     
+	    		<div class="carousel-inner">
+	      		<div class="active item">
+						<div class="title"><h4 style="border-bottom:2px solid #AEADAD;">Science and Developement</h4>
+						<strong>1-Prakash Karat Congratulates CPC's New General Secretary</strong></div>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+	      		</div>
+	      		<div class="item">
+	      			<h4 style="border-bottom:2px solid #AEADAD;">Science and Developement</h4>
+	      			<strong>2-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+					<div class="item">
+					<h4 style="border-bottom:2px solid #AEADAD;">Science and Developement</h4>
+	      			<strong>3-Prakash Karat Congratulates CPC's New General Secretary</strong>
+						<div class="subtitle">  
+		  					<div class="authorInTitle" style="display:inline" > Prakash Karat </div> |  <div class="dateInTitle" style="display:inline"> 16th December 2012 </div> 
+						</div>
+						The following is the message of congratulations sent by Prakash Karat, general secretary of the CPI(M) to Xi Jinping, general secretary of the Communist Party of China on November 15, 2012
+					 </div>
+				 </div>
+				 <div style="text-align:right;padding-top:2%;padding-right:2%;padding-bottom:2%">
+	     			<div class="cnav6">
+		 				<a href="#" data-to="0" class="badge active">1</a>
+		 				<a href="#" data-to="1" class="badge">2</a>
+		 				<a href="#" data-to="2" class="badge">3</a>
+	       		</div>
+					 <script type="text/javascript">
+					 
+	       $(window).load(function() {
+               $('#myCarousel6').carousel();
+               $(".cnav6 a").click(function(e){
+               e.preventDefault();
+               var index = parseInt($(this).attr('data-to'));
+		       //alert(index);
+               $('#myCarousel6').carousel(index);
+               var nav = $('.cnav6');
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+
+               $("#myCarousel6").bind('slide', function(e) {
+               var elements = 4; // change to the number of elements in your nav
+               var nav = $('.cnav6');
+               var index = $('#myCarousel6').find('.item.active').index();
+               index = (index == elements - 1) ? 0 : index + 1;
+               var item = nav.find('a').get(index);
+               nav.find('a.active').removeClass('active');
+               $(item).addClass('active');
+               });
+	       });
+	     </script>	       		
+	     		</div>
+	     		
+	     	</div>
+	     	
+	</div>
+	
+	
+  </body>
+</html>
